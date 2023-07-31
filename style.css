@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+
+#btn{
+    padding: 6px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    background: #bc8a5f;
+    border:1px solid #7f4f24;
+}
+
+#btn:hover{
+    background-color:#7f4f24 ;
+}
+
+#input-box{
+    flex: 1;
+    width: 500px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border:2px solid  none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+
+h2{
+    color: #432818;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 640px;
+    background-image: url(images/cont.png);
+    margin: 250px auto 20px;
+    padding: 30px 20px 40px;
+    border: 2px solid none;
+    border-radius: 20px;   
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/bg.png);
+    background-size: cover;
+    padding: 10px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 20px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: "";
+    position: absolute;
+    height:30px ;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 10px;
+    left: 10px;
+}
+
+ul li.checked {
+    color: black;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(images/checked.png);
+    background-size: cover;
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px ;
+    color: black;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #7f4f24;
+
+}
+h4{
+    text-align: center;
+    font-size: large;
+    color: white;
+    text-shadow:2 px black;
+}
